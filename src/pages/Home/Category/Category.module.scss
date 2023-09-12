@@ -1,0 +1,24 @@
+.item-img {
+    color: #000;
+    cursor: pointer;
+    img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px -4px;
+        transition: all ease 0.3s;
+    }
+    &:hover img{
+        border: 2px solid var(--primary-color);
+        transform: scale(1.1);
+    }
+}
+
+.item-name{
+    margin-top: 18px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+

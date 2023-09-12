@@ -1,0 +1,40 @@
+.wrapper {
+    border: solid 2px var(--primary-color);
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0;
+    flex: 1;
+    
+}
+
+.search{
+display: flex;
+width: 100%;
+    .input {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 8px 20px;
+        border: none;
+        flex: 1;
+        outline: none;
+        color: var(--primary-color);
+    }
+}
+
+
+.icon {
+    margin: 2px;
+    padding: 0 20px;
+    align-items: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.clear {
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.34)
+}

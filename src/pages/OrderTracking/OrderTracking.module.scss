@@ -1,0 +1,134 @@
+.wrapper{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.user-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navigation{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    li {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 10px
+    }
+    li.active {
+        color: var(--primary-color);
+    }
+}
+.order-wrapper{
+    padding: 14px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+.cart-table{
+  width: 100%;
+    table{
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+}
+
+.product-img {
+    background-color: #f8f8f8;
+    img {
+        max-width: 100%;
+        max-height: 80px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+    }
+}
+
+.order-info{
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+.order-id{
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.status{
+    color: green;
+}
+
+.product-info{
+    padding: 10px;
+    p{
+        margin-bottom: 0;
+    }
+    .product-name{
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    .product-description{
+        display: flex;
+        gap: 14px;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: capitalize
+    }
+    .product-quantity{
+        font-size: 14px;
+        font-weight: 500
+    }
+}
+
+.total-price{
+    font-size: 15px;
+        font-weight: 500
+}
+
+.order-total{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.order-empty{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 26px;
+    text-align: center;
+h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 0;
+    color: var(--primary-color);
+    margin-left: 4px;
+}
+p{
+    margin-bottom: 10px;
+}
+}

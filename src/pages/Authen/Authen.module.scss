@@ -1,0 +1,54 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+ 
+}
+.inner {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    span{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+   font-size: 1.4rem;
+    input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid #cccccc;
+        outline: none;
+    }
+}
+
+
+.submit-btn{
+    width: 100%;
+    margin: 14px 0;
+    font-size: 1.4rem;
+}
+
+
+
+.register, .forgot-password{
+    padding: 0 4px;
+    color: var(--primary-color);
+    font-weight: 500;
+    &:hover {
+        color: #f5a983;
+    }
+}
+.continue-with-google, .continue-with-facebook{
+    border-color: var(--primary-color);
+}

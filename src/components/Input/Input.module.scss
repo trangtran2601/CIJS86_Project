@@ -1,0 +1,14 @@
+.form-group.invalid {
+    & .form-control{
+        border-color: #f33a58;
+    }
+    & .form-message {
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: #f33a58;
+        font-size: 12px;
+        padding: 4px 0 0;
+    
+    }
+}
