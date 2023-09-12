@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './FeatureProducts.module.scss';
 import { Row } from 'react-bootstrap';
 import ProductItem from '../../../components/ProductItem';
-import { useFirebase } from '../../../contexts/firebaseContext';
+import { useFirebase } from '../../../contexts/FirebaseContext';
 import { getDocs} from 'firebase/firestore';
 const cx = classNames.bind(styles)
 const FeatureProducts = () => {

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import { getDocs} from 'firebase/firestore';
-import { useFirebase } from '../../contexts/firebaseContext';
+import { useFirebase } from '../../contexts/FirebaseContext';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import Overview from '../../components/Overview'

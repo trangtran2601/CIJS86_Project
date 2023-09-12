@@ -3,7 +3,7 @@ import { DefaultLayout } from './layouts';
 import { publicRoutes } from './routes/index.jsx';
 import { CartContext } from './contexts/CartContext';
 import { useState } from 'react';
-import FirebaseProvider from './contexts/firebaseContext';
+import FirebaseProvider from './contexts/FirebaseContext';
 import useLocalStorage from '../src/hooks/useLocalStorage';
 function App() {
     const [cartList, setCartList] = useLocalStorage("cartList", []);

@@ -8,7 +8,7 @@ import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase';
 
-import { useFirebase } from '../../contexts/firebaseContext';
+import { useFirebase } from '../../contexts/FirebaseContext';
 import styles from './Authen.module.scss';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
