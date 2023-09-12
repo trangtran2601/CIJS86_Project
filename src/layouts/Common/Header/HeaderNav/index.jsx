@@ -43,7 +43,7 @@ const NavItem = ({ navItem }) => {
                 </Dropdown>
             ) : (
                 <div className={cx('nav-item')}>
-                    <Link to="/collections" className={cx('nav-item-link')}>
+                    <Link to="/" className={cx('nav-item-link')}>
                         {name}
                     </Link>
                 </div>

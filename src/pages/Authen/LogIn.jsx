@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import classNames from 'classnames/bind';
@@ -43,9 +45,25 @@ const LogIn = () => {
     const auth = getAuth()
     //Xử lý Log In bằng Google
     const { GoogleProvider } = useFirebase()    
-    const logInwithGoogle =  async () => {
-         await signInWithPopup(auth, GoogleProvider)  
-    } 
+    const logInwithGoogle =  async (event) => {
+        event.preventDefault()
+        const userCredential =  await signInWithPopup(auth, GoogleProvider)  
+        const {displayName, email, phoneNumber, photoURL} = userCredential.user
+        const id = userCredential.user.uid
+        const docRef = await setDoc( doc(db, "users", id) ,{
+            displayName,
+            email,
+            password: "",
+            phoneNumber,
+            photoURL,
+            address: {
+                province: '',
+                district: '',
+                ward: '',
+                houseNumber: ''
+            },  
+          }, { merge: true })
+        } 
     //Xử lý Log In bằng email & password
     const handleLogIn = (event) => {
         event.preventDefault()

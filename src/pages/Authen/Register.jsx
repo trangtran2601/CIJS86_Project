@@ -17,7 +17,6 @@ import { getAuth, createUserWithEmailAndPassword,signInWithPopup } from "firebas
 const cx = classNames.bind(styles);
 const Register = () => {
     const auth = getAuth()
-    const {userCollection} = useFirebase()
     const phoneRegExp = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/
         // Xử lý Log In bằng Google
     const { GoogleProvider } = useFirebase()    
