@@ -7,7 +7,7 @@ import Button from '../../components/Button';
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { useFirebase } from '../../contexts/firebaseContext';
+import { useFirebase } from '../../contexts/FirebaseContext';
 import { getAuth, signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
 import Input from '../../components/Input';
 

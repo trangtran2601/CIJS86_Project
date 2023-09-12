@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './CheckOut.module.scss';
 import { getAuth } from 'firebase/auth';
 import { addDoc } from 'firebase/firestore';
-import { useFirebase } from '../../contexts/firebaseContext';
+import { useFirebase } from '../../contexts/FirebaseContext';
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Button from '../../components/Button';

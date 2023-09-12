@@ -35,12 +35,12 @@ export const navigationItems = [
     {
         id: 1,
         name: 'Giới thiệu',
-        link: '/info'
+        link: '/'
     },
     {
         id: 2,
         name: 'Sản phẩm',
-        link: '/collections',
+        link: '/',
         subnavList: categories
     },
     {
